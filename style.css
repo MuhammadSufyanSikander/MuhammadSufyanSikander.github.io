@@ -1,0 +1,361 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    width: 100%;
+    background-color: #080808;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.container {
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+.container ul {
+    list-style-type: none;
+    display: flex;
+    padding: 10px;
+
+}
+
+.container ul li a {
+    text-decoration: none;
+    margin: 0 40px 0 0;
+    padding: 5px;
+    color: #ff0f4f;
+    font-size: 20px;
+
+}
+
+#logo h1 {
+    font-size: 23px;
+    padding-left: 50px;
+
+}
+
+#logo h1 span {
+    color: #ff0f4f;
+}
+
+
+a:hover {
+
+
+    background-color: #fff;
+    border-radius: 20px;
+    transition: 1s;
+
+
+}
+
+/* ----------section related------------- */
+
+
+section {
+    height: auto;
+    margin: auto;
+    width: 100%;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    display: flex;
+    justify-content: space-around;
+
+    /* background-color: rgb(252, 208, 208); */
+
+
+
+}
+
+section .part2 img {
+    /* float: right; */
+    justify-self: center;
+    width: 80%;
+    /* clip-path:circle(50% at 50% 50%); */
+    border-radius: 15px;
+
+    /* padding-right: 30px; */
+
+}
+
+section p {
+    color: #ff0f4f;
+    padding: 30px 0 0px 30px;
+    font-size: 35px;
+
+}
+
+section h2 {
+    font-size: 55px;
+    padding: 0px 0 0px 30px;
+}
+
+section h2 span {
+    padding-top: 30px;
+    font-size: 45px;
+    display: block;
+}
+
+/* --------services related------- */
+
+#services {
+    display: flex;
+
+}
+
+.total-services {
+    display: flex;
+
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+
+
+
+}
+
+.box {
+
+    max-width: 370px;
+    flex-basis: 49%;
+    padding: 20px;
+    border-bottom: 2px solid #fff;
+    box-sizing: border-box;
+    margin: 10px 0px 20px 0px;
+    border-radius: 20px;
+}
+
+.service-img img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.service-title {
+    display: inline;
+}
+
+.service-title p {
+    padding: 5px 0;
+    font-size: 22px;
+    color: #ff0f4f;
+    display: inline;
+    font-weight: bold;
+
+
+}
+
+.service-img {
+    padding: 20px 0;
+
+}
+
+
+/* ------Contact us ----- */
+.contact {
+    margin: auto;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background: url(/Images/footer2.jpg );
+    background-position: center;
+    background-repeat: no-repeat;
+background-size: cover;
+
+}
+
+.form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.cname,
+.cmail,
+.cmsg {
+    width: 70%;
+    margin-bottom: 20px;
+}
+
+.cname #name {
+    width: 100%;
+    padding: 10px;
+    background-color: transparent;
+    color: #fff;
+    border-color: transparent;
+    outline: none;
+
+}
+
+.cmail #email {
+    width: 100%;
+    padding: 10px;
+    color: #fff;
+    background-color: transparent;
+    border-color: transparent;
+    outline: none;
+
+}
+
+.cmsg #msg {
+    width: 100%;
+    padding: 10px;
+    color: #fff;
+    background-color: transparent;
+    border-color: transparent;
+    min-height: 10px;
+    max-height: fit-content;
+    outline: none;
+    font-size: 33px;
+    
+}
+.cmsg #msg::-webkit-scrollbar{
+    width: 5px ;
+    color: black;
+}
+.cmsg #msg::-webkit-scrollbar-track{
+    width: 5px ;
+    background-color: black;
+}
+.cmsg #msg::-webkit-scrollbar-thumb{
+    width: 5px ;
+    background-color: #ff0f4f;
+
+}
+
+.form fieldset {
+    border-color: #ff0f4f;
+    outline: none;
+    
+
+}
+
+.form legend {
+    padding: 3px;
+    margin: 3px;
+}
+
+
+#button {
+    width: 70px;
+    margin: 20px;
+    padding: 5px 5px 5px 5px;
+    margin-bottom: 20px;
+    font-size: large;
+    color: #ff0f4f;
+}
+
+/* ------footer related------- */
+
+
+footer{
+    display: flex;
+    /* background: url(/Images/footer2.jpg);
+    background-size: cover;
+  background-position: center; */
+  width: 100%;
+  height: 400px;
+}
+footer .foot{
+padding-bottom: 25px;
+text-align: center;
+   align-self: flex-end;
+}
+
+
+
+
+
+
+/* -------Media Related-------- */
+
+
+@media screen and (max-width:668px) {
+
+
+
+
+
+    .container {
+
+        flex-direction: column;
+        justify-content: space-around;
+
+        padding: 10px;
+
+    }
+
+    .container ul li a {
+
+        margin: 0 10px 0 0;
+
+
+    }
+
+    #logo h1 {
+
+        margin-left: 1px;
+
+    }
+
+    section {
+
+        text-align: center;
+        padding-top: 50px;
+        display: flex;
+        flex-direction: column-reverse;
+
+    }
+
+    section p {
+        color: #ff0f4f;
+        padding: 10px 0 0px 0px;
+        font-size: 25px;
+
+    }
+
+    section .part2 img {
+
+
+        clip-path: circle(50% at 50% 50%);
+        width: 55%;
+
+
+    }
+
+    section h2 {
+        font-size: 20px;
+
+
+
+
+    }
+
+    section h2 span {
+        padding: 0px 0 0px 0px;
+        font-size: 20px;
+
+    }
+
+    .box {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+}
